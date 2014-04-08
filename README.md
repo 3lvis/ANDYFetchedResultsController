@@ -1,0 +1,4 @@
+ANDYFetchedResultsController
+============================
+
+NSFetchedResultsController on steroids
