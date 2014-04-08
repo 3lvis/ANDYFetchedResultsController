@@ -18,15 +18,13 @@ Instead of this:
 
 ```objc
 NSFetchRequest* fetchRequest = [[NSFetchRequest alloc] init];
-NSEntityDescription* entity = [NSEntityDescription
-                               entityForName:@"Widget" inManagedObjectContext:self.managedObjectContext];
+NSEntityDescription* entity = [NSEntityDescription entityForName:@"Widget" inManagedObjectContext:self.managedObjectContext];
 [fetchRequest setEntity:entity];
 
 NSPredicate* predicate = [NSPredicate predicateWithFormat: @"type == 'abc'"];
 [fetchRequest setPredicate:predicate];
 
-NSSortDescriptor* sortDescriptor = [[NSSortDescriptor alloc]
-                                    initWithKey:@"createDdate" ascending:YES];
+NSSortDescriptor* sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"createDdate" ascending:YES];
 
 NSArray* sortDescriptors = [[NSArray alloc] initWithObjects: sortDescriptor, nil];
 [fetchRequest setSortDescriptors:sortDescriptors];
