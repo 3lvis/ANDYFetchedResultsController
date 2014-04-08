@@ -10,7 +10,7 @@ NSFetchedResultsController *fetchedResultsController = [[[[Widget fetchInContext
                                                                            limit:5];
 NSError *error = nil;
 if (![self.fetchedResultsController performFetch:&error]) {
-  // print error
+  // handle error
 }
 ```
 
@@ -39,6 +39,6 @@ NSFetchedResultsController *fetchedResultsController = [[NSFetchedResultsControl
 
 NSError *error = nil;
 if (![self.fetchedResultsController performFetch:&error]) {
-  // print error
+  // handle error
 }
 ```
