@@ -4,7 +4,7 @@ ANDYFetchedResultsController
 Write this:
 
 ```objc
-NSFetchedResultsController *fetchedResultsController = [[[[Widget fetchInContext:context]
+NSFetchedResultsController *fetchedResultsController = [[[[Midget fetchInContext:context]
                                                                            where:@"type == 'abc'"]
                                                                           sortBy:@"createdDate"]
                                                                            limit:5];
@@ -18,7 +18,7 @@ Instead of this:
 
 ```objc
 NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
-NSEntityDescription* entity = [NSEntityDescription entityForName:@"Widget" 
+NSEntityDescription* entity = [NSEntityDescription entityForName:@"Midget" 
                                           inManagedObjectContext:context];
 [fetchRequest setEntity:entity];
 
