@@ -1,7 +1,7 @@
 ANDYFetchedResultsController
 ============================
 
-Write this:
+The idea is to write this:
 
 ```objc
 NSFetchedResultsController *fetchedResultsController = [[[[Midget fetchInContext:context]
